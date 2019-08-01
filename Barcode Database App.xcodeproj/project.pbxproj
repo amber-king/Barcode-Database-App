@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		96E4E50D22F38CA50069C11C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4E50C22F38CA50069C11C /* AppDelegate.swift */; };
-		96E4E50F22F38CA50069C11C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4E50E22F38CA50069C11C /* ViewController.swift */; };
 		96E4E51222F38CA50069C11C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E4E51022F38CA50069C11C /* Main.storyboard */; };
 		96E4E51422F38CA90069C11C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E4E51322F38CA90069C11C /* Assets.xcassets */; };
 		96E4E51722F38CA90069C11C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E4E51522F38CA90069C11C /* LaunchScreen.storyboard */; };
+		96E4E51F22F38E110069C11C /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4E51E22F38E110069C11C /* ScanViewController.swift */; };
+		96E4E52122F38EA30069C11C /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E4E52022F38EA30069C11C /* ProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		96E4E50922F38CA50069C11C /* Barcode Database App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Barcode Database App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E4E50C22F38CA50069C11C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96E4E50E22F38CA50069C11C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		96E4E51122F38CA50069C11C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96E4E51322F38CA90069C11C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E4E51622F38CA90069C11C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E4E51822F38CA90069C11C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E4E51E22F38E110069C11C /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
+		96E4E52022F38EA30069C11C /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				96E4E50C22F38CA50069C11C /* AppDelegate.swift */,
-				96E4E50E22F38CA50069C11C /* ViewController.swift */,
 				96E4E51022F38CA50069C11C /* Main.storyboard */,
 				96E4E51322F38CA90069C11C /* Assets.xcassets */,
 				96E4E51522F38CA90069C11C /* LaunchScreen.storyboard */,
 				96E4E51822F38CA90069C11C /* Info.plist */,
+				96E4E51E22F38E110069C11C /* ScanViewController.swift */,
+				96E4E52022F38EA30069C11C /* ProductViewController.swift */,
 			);
 			path = "Barcode Database App";
 			sourceTree = "<group>";
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E4E50F22F38CA50069C11C /* ViewController.swift in Sources */,
+				96E4E52122F38EA30069C11C /* ProductViewController.swift in Sources */,
 				96E4E50D22F38CA50069C11C /* AppDelegate.swift in Sources */,
+				96E4E51F22F38E110069C11C /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Z3NXLYU75;
 				INFOPLIST_FILE = "Barcode Database App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +308,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9Z3NXLYU75;
 				INFOPLIST_FILE = "Barcode Database App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
