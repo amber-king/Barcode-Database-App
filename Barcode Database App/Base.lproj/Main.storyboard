@@ -108,6 +108,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XYd-Ge-UWm"/>
                     </view>
+                    <connections>
+                        <outlet property="companyLabel" destination="bbJ-v8-jeB" id="jem-fO-YOQ"/>
+                        <outlet property="disposalLabel" destination="KBw-Zb-eGg" id="OCW-U3-Vjs"/>
+                        <outlet property="pointsLabel" destination="PaR-2h-gHX" id="Wnx-nq-fll"/>
+                        <outlet property="productImage" destination="X1f-CJ-NDZ" id="Z4o-AJ-b9E"/>
+                        <outlet property="productLabel" destination="KZd-Jj-Rwa" id="TAS-zk-ge8"/>
+                        <outlet property="suggestionsLabel" destination="bjI-rB-ssm" id="u97-Q2-Zf4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Epr-Cm-XUp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
