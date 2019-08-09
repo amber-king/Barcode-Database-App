@@ -15,6 +15,8 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var companyLabel: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var pointsLabel: UILabel!
+    @IBOutlet weak var recyclableImage: UIImageView!
+    @IBOutlet weak var biodegradableImage: UIImageView!
     @IBOutlet weak var disposalLabel: UILabel!
     @IBOutlet weak var suggestionsLabel: UILabel!
     
@@ -79,7 +81,6 @@ class ProductViewController: UIViewController {
     }
     
     func setLabels() {
-        
         productLabel.text = product
         companyLabel.text = company
         pointsLabel.text = String(points)
@@ -88,7 +89,6 @@ class ProductViewController: UIViewController {
         
         productImage.image = UIImage(named: image)
         
-        /*
         if (recyclable) {
             recyclableImage.image = UIImage(named: "recyclable")
         }
@@ -96,7 +96,6 @@ class ProductViewController: UIViewController {
         if (biodegradable) {
             biodegradableImage.image = UIImage(named: "biodegradable")
         }
- */
     }
     
 }
