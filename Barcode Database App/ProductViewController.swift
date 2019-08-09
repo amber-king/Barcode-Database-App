@@ -87,6 +87,7 @@ class ProductViewController: UIViewController {
         disposalLabel.text = disposal
         suggestionsLabel.text = suggestions
         
+        
         productImage.image = UIImage(named: image)
         
         if (recyclable) {
