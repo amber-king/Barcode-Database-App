@@ -27,8 +27,8 @@ class ProductViewController: UIViewController {
     var product: String = ""
     var company: String = ""
     var image: String = ""
-    var recyclable: Int = 0
-    var biodegradable: Int = 0
+    var recyclable: Bool = false
+    var biodegradable: Bool = false
     var disposal: String = ""
     var points: Int = 0
     var suggestions: String = ""
@@ -82,11 +82,11 @@ class ProductViewController: UIViewController {
         product = json["product_name"] as? String ?? ""
         company = json["company_name"] as? String ?? ""
         image = json["image"] as? String ?? ""
-        recyclable = json["recyclable"] as? Int ?? 0
-        biodegradable = json["biodegradable"] as? Int ?? 0
+        recyclable = Int(json["recyclable"] as? String ?? "") == 1
+        biodegradable = Int(json["biodegradable"] as? String ?? "") == 1
         disposal = json["disposal"] as? String ?? ""
-        points = json["points"] as? Int ?? 0
-        suggestions = json["suggestions"] as? String ?? ""
+        points = Int(json["points"] as? String ?? "") ?? 0
+        suggestions = json["suggestions"] as? String ?? "No product suggestions."
         
         DispatchQueue.main.async {
             self.stopLoading()
@@ -116,6 +116,8 @@ class ProductViewController: UIViewController {
             disposalLabel.text = disposal
             suggestionsLabel.text = suggestions
             
+            print(disposal)
+            
             // load image from url
             let url = URL(string: image)!
             let data = try? Data(contentsOf: url)
@@ -124,22 +126,15 @@ class ProductViewController: UIViewController {
                 productImage.image = UIImage(data: imageData)
             }
             
-            print(recyclable)
-            print(biodegradable)
-            
             // set recycling image
-            /*
-            if (recyclable == 1) {
+            if (recyclable) {
                 recyclableImage.image = UIImage(named: "recyclable")
             }
             
-            
-            
             // set biodegradable image
-            if (biodegradable == 1) {
+            if (biodegradable) {
                 biodegradableImage.image = UIImage(named: "biodegradable")
             }
- */
         }
         
     }
