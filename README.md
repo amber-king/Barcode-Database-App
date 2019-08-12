@@ -1,7 +1,8 @@
 # Barcode-Database-App
 
 Prototype for SHAD -- Yttrium
-
+<br/>
+<br/>
 ### Database
 ##### Accessing all products:
 `GET http://eatcofriendly.000webhostapp.com/api/product/read.php`
@@ -50,8 +51,8 @@ Prototype for SHAD -- Yttrium
 }
 ```
 (also, we hosted with 000webhost because we didn't want to spend any money)
-
-
+<br/>
+<br/>
 ### Helpful Links
 * [Building a Simple Barcode Scanner in iOS](https://gkbrown.org/2016/11/11/building-a-simple-barcode-scanner-in-ios/)
 * [How To Create A Simple REST API in PHP](https://www.codeofaninja.com/2017/02/create-simple-rest-api-in-php.html)
