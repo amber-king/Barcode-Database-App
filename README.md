@@ -9,7 +9,7 @@ Prototype for SHAD -- Yttrium
 
 ```
 {
-  "records": [
+  "records":[
   {
     "barcode":"0062020000743",
     "product_name":"Nutella",
