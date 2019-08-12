@@ -3,7 +3,7 @@
 Prototype for SHAD -- Yttrium
 
 ### Database
-###### Accessing all products:
+##### Accessing all products:
 `GET http://eatcofriendly.000webhostapp.com/api/product/read.php`
 
 ```
@@ -33,7 +33,7 @@ Prototype for SHAD -- Yttrium
 ```
 (yes, there are only 2 products)
 
-###### Accessing one product with the barcode
+##### Accessing one product with the barcode
 `GET http://eatcofriendly.000webhostapp.com/api/product/read_one.php?barcode=0062020000743`
 
 ```
