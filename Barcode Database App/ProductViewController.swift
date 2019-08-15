@@ -116,8 +116,6 @@ class ProductViewController: UIViewController {
             disposalLabel.text = disposal
             suggestionsLabel.text = suggestions
             
-            print(disposal)
-            
             // load image from url
             let url = URL(string: image)!
             let data = try? Data(contentsOf: url)
